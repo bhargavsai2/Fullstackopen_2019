@@ -1,0 +1,15 @@
+title Fullstack Open Part 1-0.4 (New Note) 
+
+note right of Browser: User submits note
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+Server->Browser: Response 302 Found 
+note right of Server: Note saved in server and page redirects
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+Server->Browser: Response HTML Page
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Server->Browser: Response main.css
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+Server->Browser: Response main.js
+note right of Browser: Browser starts executing javascript and make another request of note data i.e, data.json
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+note right of Browser: All notes including recently added notes has been displayed
