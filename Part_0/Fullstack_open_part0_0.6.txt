@@ -1,0 +1,6 @@
+title Fullstack Open Part 1-0.6 (SPA) 
+
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/new_note_spa
+Server->Browser: Response 201 created (with no page load)
+

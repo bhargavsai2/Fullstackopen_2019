@@ -1,0 +1,12 @@
+title Fullstack Open Part 1-0.5 (SPA) 
+
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+Server->Browser: Response HTML Page
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Server->Browser: Response main.css
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+Server->Browser: Response spa.js
+note right of Browser: Browser starts executing javascript and make another request of note data i.e, data.json
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+note right of Browser: All notes including recently added notes has been displayed
